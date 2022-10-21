@@ -1,0 +1,97 @@
+.race {
+  @extend .container, .flex, .border-radius, .gap-16;
+  border: 2px solid $darkBrown;
+  padding: 35px;
+  justify-content: center;
+  align-items: center;
+
+  &__track {
+    @extend .flex, .flex-column, .justify-center, .width-full;
+    background-color: $darkGreen;
+  }
+
+  &__interface {
+    @extend .flex, .flex-column, .gap-16;
+  }
+
+  &__buttons {
+    @extend .flex, .gap-2;
+  }
+
+  &__button {
+    @extend .width-full;
+  }
+
+  &__countdown {
+    @extend .absolute, .border-radius, .self-center;
+    background-image: url('@/assets/images/start.gif');
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border: 2px solid $darkBrown;
+  }
+
+  &__leaderboard {
+    @extend .border-radius;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: $lightBrown;
+    border: 2px solid $darkBrown;
+    width: 300px;
+    color: $darkGreen;
+  }
+
+  &__list {
+    @extend .flex, .flex-column, .align-center, .gap-2;
+  }
+
+  &__list-item {
+    @extend .border-radius;
+    background-color: $whiteBrown;
+    padding: 3px;
+    list-style-position: inside;
+
+    &::marker {
+      content: 'Kulvar ' counter(list-item) ': ';
+    }
+  }
+
+  &__lane {
+    @extend .flex;
+    padding-right: 75px;
+    padding-left: 30px;
+
+    &--dark {
+      background-color: #417154;
+    }
+
+    &--light {
+      background-color: #3a644b;
+    }
+
+    &--first {
+      border-top-left-radius: 35px;
+      border-top-right-radius: 35px;
+    }
+
+    &--last {
+      border-bottom-left-radius: 35px;
+      border-bottom-right-radius: 35px;
+    }
+  }
+
+  &__point {
+    @extend .inline-block;
+    border-left: 3px solid #c8b282;
+
+    &--finish {
+      margin-left: auto;
+    }
+  }
+
+  &__horse {
+    @extend .inline-block, .relative, .height-auto;
+    width: 50px;
+    margin: 5px 0;
+  }
+}

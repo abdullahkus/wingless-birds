@@ -1,12 +1,10 @@
 <script setup>
-import InputText from './components/Input/InputText.vue';
-import Button from './components/Button.vue';
+import RaceView from "./views/RaceView.vue";
+
 </script>
 
 <template>
-    <div class="container">
-
-    </div>
+    <RaceView></RaceView>
 </template>
 
 <style lang="scss">

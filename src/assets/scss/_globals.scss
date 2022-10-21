@@ -21,10 +21,6 @@ body {
   display: flex;
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-column {
   flex-direction: column;
 }
@@ -37,16 +33,60 @@ body {
   align-items: center;
 }
 
+.self-center {
+  align-self: center;
+}
+
+.gap-2 {
+  gap: 2px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
 /* Flex */
+
+/* Position */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+/* Position */
+
+.align-center {
+  text-align: center;
+}
+
+.height-auto {
+  height: auto;
+}
+
+.width-auto {
+  width: auto;
+}
 
 /* Input */
 
 input {
-  @extend .border-radius, .border-0, .outline-0;
+  @extend .border-radius, .outline-0;
   background-color: $lightBrown;
   padding: 5px 10px;
   color: $darkGreen;
-
+  border: 2px solid transparent;
 
   &::placeholder {
     color: $darkGreen;
