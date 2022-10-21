@@ -1,0 +1,17 @@
+input {
+  @extend .border-radius, .border-0, .outline-0;
+  background-color: $lightBrown;
+  padding: 5px 10px;
+  color: $darkGreen;
+
+  &::placeholder {
+    color: $darkGreen;
+  }
+
+  &:focus {
+    border: 2px solid $darkBrown;
+  }
+}
+
+/* input[type='text'] {
+} */
