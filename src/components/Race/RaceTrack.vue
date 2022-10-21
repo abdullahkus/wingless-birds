@@ -6,11 +6,8 @@ import RaceLane from './RaceLane.vue';
 
 <template>
   <div class="race__track">
-
-    <!-- Countdown -->
     <RaceCountdown></RaceCountdown>
 
-    <!-- Lanes -->
     <RaceLane></RaceLane>
   </div>
 </template>

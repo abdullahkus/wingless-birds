@@ -1,10 +1,9 @@
 button,
 .button {
-  @extend .margin-5;
+  @extend .border-radius;
   cursor: pointer;
   background-color: $lightBrown;
   color: $darkGreen;
   padding: 5px 10px;
   border: 2px solid $darkBrown;
-  border-radius: 32px;
 }
