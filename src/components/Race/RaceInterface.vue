@@ -9,7 +9,6 @@ import Button from '../Button.vue';
     <RaceLeaderboard></RaceLeaderboard>
     <div class="race__buttons">
       <Button class="race__button" title="Start"></Button>
-      <Button class="race__button" title="Restart"></Button>
     </div>
   </div>
 </template>

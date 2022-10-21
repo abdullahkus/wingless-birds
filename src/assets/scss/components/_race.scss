@@ -31,6 +31,16 @@
     border: 2px solid $darkBrown;
   }
 
+  &__result {
+    @extend .race__leaderboard,
+      .flex,
+      .flex-column,
+      .gap-16,
+      .absolute,
+      .border-radius,
+      .self-center;
+  }
+
   &__leaderboard {
     @extend .border-radius;
     padding: 10px;
@@ -49,10 +59,6 @@
     background-color: $whiteBrown;
     padding: 3px;
     list-style-position: inside;
-
-    &::marker {
-      content: 'Kulvar ' counter(list-item) ': ';
-    }
   }
 
   &__lane {

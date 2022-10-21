@@ -1,14 +1,15 @@
 <script setup>
 import RaceCountdown from './RaceCountdown.vue';
-import RaceLane from './RaceLanes/RaceLanes.vue';
+import RaceLanes from './RaceLanes/RaceLanes.vue';
+import RaceResult from './RaceResult.vue';
 
 </script>
 
 <template>
   <div class="race__track">
-    <RaceCountdown></RaceCountdown>
-
-    <RaceLane></RaceLane>
+    <RaceResult ></RaceResult>
+    <RaceCountdown v-if="false"></RaceCountdown>
+    <RaceLanes></RaceLanes>
   </div>
 </template>
 
