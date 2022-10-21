@@ -1,6 +1,6 @@
 <script setup>
 import RaceCountdown from './RaceCountdown.vue';
-import RaceLane from './RaceLane.vue';
+import RaceLane from './RaceLanes/RaceLanes.vue';
 
 </script>
 
