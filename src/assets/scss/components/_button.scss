@@ -7,4 +7,9 @@ button,
   padding: 5px 10px;
   border: 2px solid $darkBrown;
   font-size: 16px;
+
+  &:hover{
+    background-color: $darkBrown;
+    color: $lightBrown;
+  }
 }
