@@ -32,7 +32,7 @@
   }
 
   &__result {
-    @extend .race__leaderboard,
+    @extend .race__information,
       .flex,
       .flex-column,
       .gap-16,
@@ -41,8 +41,8 @@
       .self-center;
   }
 
-  &__leaderboard {
-    @extend .border-radius;
+  &__information {
+    @extend .flex, .flex-column, .border-radius, .gap-16;
     padding: 10px;
     background-color: $lightBrown;
     border: 2px solid $darkBrown;
@@ -50,12 +50,16 @@
     color: $darkGreen;
   }
 
+  &__leaderboard{
+    @extend .flex, .flex-column, .gap-16,  .items-center;
+  }
+
   &__list {
     @extend .flex, .flex-column, .align-center, .gap-2;
   }
 
   &__list-item {
-    @extend .border-radius;
+    @extend .border-radius, .width-full;
     background-color: $whiteBrown;
     padding: 3px;
     list-style-position: inside;
