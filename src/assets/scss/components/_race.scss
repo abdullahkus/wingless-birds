@@ -31,10 +31,6 @@
     border: 2px solid $darkBrown;
   }
 
-  &__result {
-    @extend .flex, .flex-column, .gap-16, .items-center;
-  }
-
   &__information {
     @extend .flex, .flex-column, .border-radius, .gap-16;
     padding: 10px;
@@ -45,11 +41,24 @@
   }
 
   &__leaderboard {
-    @extend .flex, .flex-column, .gap-16, .items-center;
+    @extend .flex, .flex-column, .gap-16, .items-stretch;
+  }
+
+  &__horse-name {
+    @extend .flex, .flex-column, .gap-16, .items-stretch;
+  }
+
+  &__result {
+    @extend .flex, .flex-column, .gap-16, .items-stretch;
   }
 
   &__list {
-    @extend .flex, .flex-column, .align-center, .gap-2;
+    @extend .flex, .flex-column, .text-center, .gap-2;
+  }
+
+  &__title{
+    @extend .text-center;
+    font-size: 18px;
   }
 
   &__list-item {

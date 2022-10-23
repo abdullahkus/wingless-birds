@@ -34,6 +34,10 @@ body {
   align-items: center;
 }
 
+.items-stretch{
+  align-items: stretch;
+}
+
 .self-center {
   align-self: center;
 }
@@ -68,7 +72,7 @@ body {
 
 /* Position */
 
-.align-center {
+.text-center {
   text-align: center;
 }
 

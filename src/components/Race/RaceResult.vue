@@ -5,6 +5,7 @@ import Button from '../Button.vue';
 
 <template>
   <div class="race__result">
+    <h2 class="race__title">Result</h2>
     <ol class="race__list">
       <li v-for="(number, index) in 8" :key="index" class="race__list-item">
         Şahbatur
