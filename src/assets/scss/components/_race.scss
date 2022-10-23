@@ -10,9 +10,6 @@
     background-color: $darkGreen;
   }
 
-  &__interface {
-    @extend .flex, .flex-column, .gap-16;
-  }
 
   &__buttons {
     @extend .flex, .gap-2;
@@ -31,12 +28,12 @@
     border: 2px solid $darkBrown;
   }
 
-  &__information {
+  &__interface {
     @extend .flex, .flex-column, .border-radius, .gap-16;
     padding: 10px;
     background-color: $lightBrown;
     border: 2px solid $darkBrown;
-    width: 300px;
+    width: 350px;
     color: $darkGreen;
   }
 
