@@ -9,7 +9,7 @@ const props = defineProps({
   },
   name: {
     type: String,
-    required: true,
+    // required: true,
   }
 })
 const emit = defineEmits(['update:name'])

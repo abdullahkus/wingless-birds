@@ -32,13 +32,7 @@
   }
 
   &__result {
-    @extend .race__information,
-      .flex,
-      .flex-column,
-      .gap-16,
-      .absolute,
-      .border-radius,
-      .self-center;
+    @extend .flex, .flex-column, .gap-16, .items-center;
   }
 
   &__information {
@@ -50,8 +44,8 @@
     color: $darkGreen;
   }
 
-  &__leaderboard{
-    @extend .flex, .flex-column, .gap-16,  .items-center;
+  &__leaderboard {
+    @extend .flex, .flex-column, .gap-16, .items-center;
   }
 
   &__list {
@@ -87,16 +81,6 @@
     &--light {
       background-color: #3a644b;
     }
-    /* 
-    &--first {
-      border-top-left-radius: 35px;
-      border-top-right-radius: 35px;
-    }
-
-    &--last {
-      border-bottom-left-radius: 35px;
-      border-bottom-right-radius: 35px;
-    } */
   }
 
   &__point {

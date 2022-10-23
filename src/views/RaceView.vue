@@ -1,7 +1,6 @@
 <script setup>
 import RaceTrack from '../components/Race/RaceTrack.vue';
 import RaceInterface from '../components/Race/RaceInterface.vue';
-
 </script>
 
 <template>

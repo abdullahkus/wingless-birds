@@ -1,12 +1,11 @@
 <script setup>
-import RaceLeaderboard from './RaceLeaderboard.vue';
+import RaceInformation from './RaceInformation.vue';
 import Button from '../Button.vue';
-
 </script>
 
 <template>
   <div class="race__interface">
-    <RaceLeaderboard></RaceLeaderboard>
+    <RaceInformation></RaceInformation>
     <div class="race__buttons">
       <Button class="race__button" title="Start"></Button>
     </div>
