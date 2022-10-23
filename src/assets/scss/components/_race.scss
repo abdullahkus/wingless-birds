@@ -75,17 +75,17 @@
     }
 
     &--dark {
-      background-color: #417154;
+      background-color: $whiteGreen;
     }
 
     &--light {
-      background-color: #3a644b;
+      background-color: $lightGreen;
     }
   }
 
   &__point {
     @extend .inline-block;
-    border-left: 3px solid #c8b282;
+    border-left: 3px solid $lightBrown;
 
     &--finish {
       margin-left: auto;
