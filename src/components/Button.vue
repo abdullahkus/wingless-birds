@@ -10,10 +10,6 @@ const props = defineProps({
 
 <template>
   <button type="button" class="button">
-    {{props.title }}
+    {{ props.title }}
   </button>
 </template>
-
-<style lang="scss">
-
-</style>

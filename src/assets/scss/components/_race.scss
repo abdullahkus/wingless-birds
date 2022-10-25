@@ -19,13 +19,14 @@
     @extend .width-full;
   }
 
-  &__countdown {
-    @extend .absolute, .border-radius, .self-center;
+  &__count-down {
+    @extend .absolute, .border-radius, .self-center, .flex, .items-end, .justify-center;
     background-image: url('@/assets/images/start.gif');
     background-size: cover;
     width: 200px;
     height: 200px;
     border: 2px solid $darkBrown;
+    color: $darkBrown;
   }
 
   &__interface {

@@ -1,19 +1,14 @@
 <script setup>
-import RaceCountdown from './RaceCountdown.vue';
+import { ref } from 'vue'
+import RaceCountDown from './RaceCountDown.vue';
 import RaceLanes from './RaceLanes/RaceLanes.vue';
 
-import { useRaceStore } from "@/stores/raceStore"
 
-const raceStore = useRaceStore()
 </script>
 
 <template>
   <div class="race__track">
-    <RaceCountdown v-if="raceStore.showCountdown"></RaceCountdown>
+    <RaceCountDown></RaceCountDown>
     <RaceLanes></RaceLanes>
   </div>
 </template>
-
-<style lang="scss">
-
-</style>

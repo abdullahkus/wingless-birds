@@ -3,9 +3,5 @@
 </script>
 
 <template>
-  <div class="race__countdown"></div>
+  <div class="race__count-down"></div>
 </template>
-
-<style lang="scss">
-
-</style>

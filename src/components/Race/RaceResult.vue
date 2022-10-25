@@ -15,7 +15,3 @@ import Button from '../Button.vue';
   </div>
 
 </template>
-
-<style lang="scss">
-
-</style>

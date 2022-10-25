@@ -1,13 +1,10 @@
 <script setup>
 
-
 </script>
 
 <template>
-  <img class="race__horse" src="@/assets/images/horse.gif" v-if="true" />
-  <img class="race__horse" src="@/assets/images/horse-stop.gif" v-if="false" />
+  <div :style="`position:relative; left: ${4}%`">
+    <img class="race__horse" src="@/assets/images/horse.gif" v-if="true" />
+    <img class="race__horse" src="@/assets/images/horse-stop.gif" v-if="true" />
+  </div>
 </template>
-
-<style lang="scss">
-
-</style>
