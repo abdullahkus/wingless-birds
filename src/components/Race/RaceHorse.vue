@@ -1,5 +1,6 @@
 <script setup>
-
+import { useRaceStore } from '@/stores/raceStore'
+const raceStore = useRaceStore()
 </script>
 
 <template>

@@ -1,0 +1,10 @@
+.count-down {
+  color: $darkBrown;
+  &__number {
+    @extend .border-radius;
+    border: 2px solid $darkBrown;
+    padding: 0 10px;
+    background-color: $whiteBrown;
+    margin-bottom: 5px;
+  }
+}
