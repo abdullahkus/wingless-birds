@@ -13,6 +13,7 @@
     padding: 12px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    text-shadow: 4px 4px $whiteBrown;
 
     @include breakpoint-up(medium) {
       border-top-left-radius: 50%;
