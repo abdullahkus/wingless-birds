@@ -1,6 +1,7 @@
 <script setup>
 import RaceLane from './RaceLane.vue';
 import { useRaceStore } from "@/stores/raceStore"
+
 const raceStore = useRaceStore()
 </script>
 

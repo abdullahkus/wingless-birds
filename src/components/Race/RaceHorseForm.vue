@@ -5,14 +5,15 @@ import InputText from '../Input/InputText.vue';
 import { useRaceStore } from "@/stores/raceStore"
 
 const emits = defineEmits(["start"])
-
 const raceStore = useRaceStore()
 
 function start() {
+  // page up
   window.scrollTo({ top: 0 })
   emits("start")
 }
 
+// Checking if any horse name is empty
 const emptyHorseName = computed(() => {
   return raceStore.horses.some((horse) => horse.name === "")
 })

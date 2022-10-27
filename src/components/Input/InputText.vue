@@ -24,7 +24,3 @@ function nameHandler(event) {
   <input type="text" :name="props.name" :id="props.name" :value.trim="props.name" :placeholder="props.placeholderText"
     @input="nameHandler">
 </template>
-
-<style lang="scss">
-
-</style>

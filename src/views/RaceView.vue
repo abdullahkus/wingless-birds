@@ -1,14 +1,8 @@
 <script setup>
-// Third Party
 import { ref, computed, watch } from 'vue'
-// Utils
-// Store
-import { useRaceStore } from "@/stores/raceStore"
-// Component
 import RaceTrack from '../components/Race/RaceTrack.vue';
 import RaceInterface from '../components/Race/RaceInterface.vue';
-
-const raceStore = useRaceStore()
+import { useRaceStore } from "@/stores/raceStore"
 
 const raceInterface = ref({
   form: true,
@@ -16,12 +10,13 @@ const raceInterface = ref({
   result: false
 })
 const count = ref(3)
-
+const raceStore = useRaceStore()
 
 const isRace = computed(() => {
   return raceStore.isRace
 })
 
+// finished race
 watch(() => raceStore.isRace, () => {
   if (raceStore.isRace === false) {
     raceInterface.value.leaderboard = false
@@ -48,9 +43,9 @@ function restart() {
     horse.positionInLane = 0
     horse.numberOf = null
   })
+  // countdown value
   count.value = 3
 }
-
 </script>
 
 <template>

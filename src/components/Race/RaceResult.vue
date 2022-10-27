@@ -1,12 +1,10 @@
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import Button from '../Button.vue';
 import { useRaceStore } from "@/stores/raceStore"
 
 const emits = defineEmits(["restart"])
-
 const raceStore = useRaceStore()
-
 const result = ref()
 
 onMounted(() => {
@@ -14,7 +12,9 @@ onMounted(() => {
 })
 
 const resultCalculator = () => {
+  // deep copy so that the store does not change
   const copyHorses = JSON.parse(JSON.stringify(raceStore.horses));
+
   const sortedPositionInLane = copyHorses.sort((one, two) => {
     if (one.numberOf > two.numberOf) {
       return 1;
@@ -29,7 +29,6 @@ const resultCalculator = () => {
 function restart() {
   emits("restart")
 }
-
 </script>
 
 <template>
@@ -42,5 +41,4 @@ function restart() {
     </ol>
     <Button class="race__button" title="Restart" @click="restart"></Button>
   </div>
-
 </template>

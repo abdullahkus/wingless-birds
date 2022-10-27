@@ -1,15 +1,10 @@
 <script setup>
-// import { useRaceStore } from '@/stores/raceStore'
-
 const props = defineProps({
   horse: {
     type: Object,
     required: true,
   }
 })
-
-// const raceStore = useRaceStore()
-
 </script>
 
 <template>

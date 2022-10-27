@@ -9,7 +9,6 @@ const props = defineProps({
     required: true
   }
 })
-
 const emits = defineEmits(["restart", "start"])
 
 function restart() {
@@ -19,7 +18,6 @@ function restart() {
 function start() {
   emits("start")
 }
-
 </script>
 
 <template>

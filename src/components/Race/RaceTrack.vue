@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue'
 import CountDown from '../CountDown.vue';
 import RaceLanes from './RaceLanes/RaceLanes.vue';
 
@@ -13,10 +12,7 @@ const props = defineProps({
     required: true
   }
 })
-
 const emits = defineEmits(["update:count"])
-
-
 </script>
 
 <template>

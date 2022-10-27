@@ -1,5 +1,4 @@
 <script setup>
-
 const props = defineProps({
   title: {
     type: String,
@@ -13,7 +12,6 @@ const props = defineProps({
 </script>
 
 <template>
-  <!-- :disabled="!btnDisabled" -->
   <button type="button" class="button" :disabled="props.btnDisabled">
     {{ props.title }}
   </button>

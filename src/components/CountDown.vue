@@ -1,5 +1,6 @@
 <script setup>
 import { onMounted, onBeforeUnmount } from 'vue';
+
 const props = defineProps({
   count: {
     type: Number,
@@ -7,7 +8,6 @@ const props = defineProps({
   }
 })
 const emits = defineEmits(['update:count'])
-
 let countdown = null
 
 onMounted(() => {
@@ -19,9 +19,9 @@ onMounted(() => {
       clearInterval(countdown)
     }
   }, 1000)
-}),
+})
 
-  onBeforeUnmount(() => clearInterval(countdown))
+onBeforeUnmount(() => clearInterval(countdown))
 </script>
 
 <template>

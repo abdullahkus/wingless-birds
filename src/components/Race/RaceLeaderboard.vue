@@ -5,8 +5,10 @@ import { useRaceStore } from "@/stores/raceStore"
 const raceStore = useRaceStore()
 
 const leaderboard = computed(() => {
+  // deep copy so that the store does not change
   const copyHorses = JSON.parse(JSON.stringify(raceStore.horses));
 
+  // horses that did not finish the race
   const notFinishedHorse = copyHorses.filter((horse) => horse.numberOf === null)
   if (!notFinishedHorse) return
 
@@ -22,9 +24,13 @@ const leaderboard = computed(() => {
 })
 
 const finished = computed(() => {
+  // deep copy so that the store does not change
   const copyHorses = JSON.parse(JSON.stringify(raceStore.horses));
+
+  // horses finishing the race
   const finishedHorses = copyHorses.filter((horse) => horse.numberOf)
   let finishedNumberOf
+
   if (finishedHorses.length > 0) {
     finishedNumberOf = finishedHorses.sort((firstHorse, secondHorse) => {
       if (firstHorse.numberOf < secondHorse.numberOf) {
