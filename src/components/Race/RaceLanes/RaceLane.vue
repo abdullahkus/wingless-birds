@@ -11,7 +11,8 @@ const props = defineProps({
 
 <template>
   <RaceHorse :horse="props.horse"></RaceHorse>
-  
-  <div class="race__point">{{props.horse.name}}</div>
+
+  <div class="race__point"></div>
+  <div class="race__lane-name">{{ props.horse.name }}</div>
   <div class="race__point race__point--finish"></div>
 </template>

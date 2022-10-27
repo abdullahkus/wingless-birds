@@ -13,7 +13,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div :style="`position:relative; left: ${props.horse.positionInLane}%`">
+  <div class="relative" :style="`left: ${props.horse.positionInLane}%`">
     <img class="race__horse" src="@/assets/images/horse.gif" v-if="props.horse.running" />
     <img class="race__horse" src="@/assets/images/horse-stop.gif" v-if="!props.horse.running" />
   </div>

@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
 
-  @include breakpoint-down(small) {
+  @include breakpoint-down(medium) {
     flex-direction: column;
   }
 
@@ -33,6 +33,7 @@
     background-size: cover;
     width: 200px;
     height: 200px;
+    z-index: 25;
     border: 2px solid $darkBrown;
   }
 
@@ -44,7 +45,7 @@
     width: 30%;
     color: $darkGreen;
 
-    @include breakpoint-down(small) {
+    @include breakpoint-down(medium) {
       width: 100%;
     }
   }
@@ -114,5 +115,11 @@
     @extend .inline-block, .relative, .height-auto;
     width: 60px;
     margin: 5px 0;
+  }
+
+  &__lane-name {
+    @extend .flex, .justify-center, .items-center, .width-full, .relative;
+    color: $lightBrown;
+    opacity: 0.5;
   }
 }
