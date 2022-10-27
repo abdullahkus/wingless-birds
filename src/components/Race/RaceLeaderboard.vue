@@ -24,20 +24,20 @@ const leaderboard = computed(() => {
 const finished = computed(() => {
   const copyHorses = JSON.parse(JSON.stringify(raceStore.horses));
   const finishedHorses = copyHorses.filter((horse) => horse.numberOf)
-  let sortedPositionInLane
+  let finishedNumberOf
   if (finishedHorses.length > 0) {
-    sortedPositionInLane = finishedHorses.sort((firstHorse, secondHorse) => {
-      if (firstHorse.positionInLane > secondHorse.positionInLane) {
+    finishedNumberOf = finishedHorses.sort((firstHorse, secondHorse) => {
+      if (firstHorse.numberOf > secondHorse.numberOf) {
         return -1;
       }
-      if (firstHorse.positionInLane < secondHorse.positionInLane) {
+      if (firstHorse.numberOf < secondHorse.numberOf) {
         return 1;
       }
     })
   } else {
     return
   }
-  return sortedPositionInLane
+  return finishedNumberOf
 })
 </script>
 
