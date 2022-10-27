@@ -16,8 +16,6 @@ const leaderboard = computed(() => {
   })
   return sortedPositionInLane
 })
-
-
 </script>
 
 <template>

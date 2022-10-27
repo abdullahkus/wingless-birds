@@ -1,22 +1,16 @@
 <script setup>
-import { ref, onMounted, watch } from 'vue'
 import Button from '../Button.vue';
 import InputText from '../Input/InputText.vue';
 import { useRaceStore } from "@/stores/raceStore"
-
 
 const emits = defineEmits(["start"])
 
 const raceStore = useRaceStore()
 
-
-
 function start() {
+  window.scrollTo({ top: 0 })
   emits("start")
 }
-
-
-
 </script>
 
 <template>
