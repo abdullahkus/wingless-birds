@@ -1,0 +1,17 @@
+.header {
+  @extend .flex, .justify-center;
+  @include breakpoint-up(medium) {
+    margin: 50px 0 0 0;
+  }
+
+  &__text {
+    border: 3px solid $darkBrown;
+    padding: 24px;
+    color: $lightGreen;
+    background-color: $lightBrown;
+    font-size: 32px;
+    font-weight: 700;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+}
