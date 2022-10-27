@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { computed } from 'vue'
 import { useRaceStore } from "@/stores/raceStore"
 
 const raceStore = useRaceStore()
@@ -27,10 +27,10 @@ const finished = computed(() => {
   let finishedNumberOf
   if (finishedHorses.length > 0) {
     finishedNumberOf = finishedHorses.sort((firstHorse, secondHorse) => {
-      if (firstHorse.numberOf > secondHorse.numberOf) {
+      if (firstHorse.numberOf < secondHorse.numberOf) {
         return -1;
       }
-      if (firstHorse.numberOf < secondHorse.numberOf) {
+      if (firstHorse.numberOf > secondHorse.numberOf) {
         return 1;
       }
     })
