@@ -8,9 +8,17 @@ button,
   border: 2px solid $darkBrown;
   font-size: 16px;
 
-  &:hover{
+  &:hover {
     background-color: $darkBrown;
     color: $lightBrown;
     border: 2px solid $whiteBrown;
+  }
+
+  &:disabled {
+    cursor: context-menu;
+    opacity: 0.5;
+    background-color: $darkBrown;
+    border: 2px solid $darkBrown;
+    color: $whiteBrown;
   }
 }

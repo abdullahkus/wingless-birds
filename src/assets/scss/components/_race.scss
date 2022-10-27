@@ -50,6 +50,11 @@
     }
   }
 
+  &__invalid{
+    @extend .flex, .justify-center, .items-center;
+    
+  }
+
   &__leaderboard {
     @extend .flex, .flex-column, .gap-16, .items-stretch;
   }

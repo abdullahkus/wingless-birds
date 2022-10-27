@@ -21,7 +21,7 @@ function nameHandler(event) {
 
 <template>
   <label :for="props.name">{{ props.labelText }}</label>
-  <input type="text" :name="props.name" :id="props.name" :value="props.name" :placeholder="props.placeholderText"
+  <input type="text" :name="props.name" :id="props.name" :value.trim="props.name" :placeholder="props.placeholderText"
     @input="nameHandler">
 </template>
 

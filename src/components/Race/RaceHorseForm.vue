@@ -1,4 +1,5 @@
 <script setup>
+import { computed } from 'vue'
 import Button from '../Button.vue';
 import InputText from '../Input/InputText.vue';
 import { useRaceStore } from "@/stores/raceStore"
@@ -11,6 +12,10 @@ function start() {
   window.scrollTo({ top: 0 })
   emits("start")
 }
+
+const emptyHorseName = computed(() => {
+  return raceStore.horses.some((horse) => horse.name === "")
+})
 </script>
 
 <template>
@@ -21,8 +26,11 @@ function start() {
         <InputText v-model:name="horse.name"></InputText>
       </li>
     </ol>
+    <div class="race__invalid" v-if="emptyHorseName">
+      * Horses must have a name.
+    </div>
     <div class="race__buttons">
-      <Button class="race__button" title="Start" @click="start"></Button>
+      <Button class="race__button" title="Start" @click="start" :btnDisabled="emptyHorseName"></Button>
     </div>
   </div>
 </template>
