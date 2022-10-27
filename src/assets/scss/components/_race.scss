@@ -76,6 +76,11 @@
     background-color: $whiteBrown;
     padding: 3px;
     list-style-position: inside;
+
+    &--finished {
+      background-color: $darkGreen;
+      color: $whiteBrown;
+    }
   }
 
   &__lane {

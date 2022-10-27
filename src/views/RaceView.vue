@@ -46,6 +46,7 @@ function restart() {
   raceInterface.value.form = true
   raceStore.horses.map((horse) => {
     horse.positionInLane = 0
+    horse.numberOf = null
   })
   count.value = 3
 }
