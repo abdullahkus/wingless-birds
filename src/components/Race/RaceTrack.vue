@@ -18,7 +18,7 @@ const emits = defineEmits(["update:count"])
 <template>
   <div class="race__track">
     <div class="race__count-down" v-if="props.isRace && props.count > 0">
-      <CountDown v-model:count="count"></CountDown>
+      <CountDown v-model:count="props.count"></CountDown>
     </div>
     <RaceLanes></RaceLanes>
   </div>
