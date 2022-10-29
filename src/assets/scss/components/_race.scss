@@ -50,9 +50,8 @@
     }
   }
 
-  &__invalid{
+  &__invalid {
     @extend .flex, .justify-center, .items-center;
-    
   }
 
   &__leaderboard {
@@ -131,5 +130,6 @@
     @extend .flex, .justify-center, .items-center, .width-full, .relative;
     color: $lightBrown;
     opacity: 0.5;
+    overflow-wrap: anywhere;
   }
 }
