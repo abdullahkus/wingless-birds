@@ -47,9 +47,6 @@ export const useRaceStore = defineStore('RaceStore', {
     },
     runningHorses() {
       this.horses.map((horse) => horse.running = true)
-    },
-    isRaceStatusChange() {
-      this.isRace = !this.isRace
     }
   }
 })

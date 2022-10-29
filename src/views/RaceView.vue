@@ -25,7 +25,7 @@ function countHandler(value) {
 }
 
 function start() {
-  raceStore.isRaceStatusChange()
+  raceStore.isRace = true
   setTimeout(() => {
     raceInterface.value.form = false
     raceInterface.value.leaderboard = true
