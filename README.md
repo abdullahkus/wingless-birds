@@ -12,4 +12,5 @@ This is a game where horses compete in 8 different lanes.
 ### Technologies
 
 - Vue.js
+- Pinia
 - Scss
