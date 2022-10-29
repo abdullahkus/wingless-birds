@@ -1,7 +1,7 @@
 # Wingless Birds
 This is a game where horses compete in 8 different lanes.
 
-[Check out the live example.](https://vue-bootcamp-final-project-1x9nbh7c8-abdullahkus.vercel.app/)
+[Check out the live example.](https://wingless-birds.vercel.app/)
 
 ### General Features
 
