@@ -1,7 +1,15 @@
-# Vue 3 + Vite
+# Wingless Birds
+This is a game where horses compete in 8 different lanes.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+[Check out the live example.](https://vue-bootcamp-final-project-1x9nbh7c8-abdullahkus.vercel.app/)
 
-## Recommended IDE Setup
+### General Features
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- Custom horse names
+- Live leaderboard
+- Results list with lane number and horse name
+
+### Technologies
+
+- Vue.js
+- Scss
