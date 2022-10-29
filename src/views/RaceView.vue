@@ -12,10 +12,6 @@ const raceInterface = ref({
 const count = ref(3)
 const raceStore = useRaceStore()
 
-const isRace = computed(() => {
-  return raceStore.isRace
-})
-
 // finished race
 watch(() => raceStore.isRace, () => {
   if (raceStore.isRace === false) {
@@ -23,6 +19,10 @@ watch(() => raceStore.isRace, () => {
     raceInterface.value.result = true
   }
 })
+
+function countHandler(value) {
+  count.value = value
+}
 
 function start() {
   raceStore.isRaceStatusChange()
@@ -50,7 +50,7 @@ function restart() {
 
 <template>
   <div class="race">
-    <RaceTrack :showCountdown="raceInterface.countdown" :isRace="isRace" v-model:count="count">
+    <RaceTrack :count="count" @countHandler="countHandler">
     </RaceTrack>
     <RaceInterface :raceInterface="raceInterface" @restart="restart" @start="start"></RaceInterface>
   </div>

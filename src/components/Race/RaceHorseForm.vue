@@ -31,7 +31,7 @@ const emptyHorseName = computed(() => {
       * Horses must have a name.
     </div>
     <div class="race__buttons">
-      <Button class="race__button" title="Start" @click="start" :btnDisabled="emptyHorseName"></Button>
+      <Button class="race__button" title="Start" @click="start" :btnDisabled="emptyHorseName || raceStore.isRace"></Button>
     </div>
   </div>
 </template>

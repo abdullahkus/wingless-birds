@@ -2,19 +2,19 @@
 import { onMounted, onBeforeUnmount } from 'vue';
 
 const props = defineProps({
-  count: {
+  countNumber: {
     type: Number,
     required: true
   }
 })
-const emits = defineEmits(['update:count'])
+const emits = defineEmits(['update:countNumber'])
 let countdown = null
 
 onMounted(() => {
   countdown = setInterval(() => {
-    let number = props.count
+    let number = props.countNumber
     number--
-    emits('update:count', number)
+    emits('update:countNumber', number)
     if (number === 0) {
       clearInterval(countdown)
     }
@@ -26,6 +26,6 @@ onBeforeUnmount(() => clearInterval(countdown))
 
 <template>
   <div class="count-down">
-    <div class="count-down__number">{{ props.count }}</div>
+    <div class="count-down__number">{{ props.countNumber }}</div>
   </div>
 </template>
