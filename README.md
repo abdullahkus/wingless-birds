@@ -2,7 +2,6 @@
 This is a game where horses compete in 8 different lanes.
 
 ## [Check out the live example.](https://wingless-birds.vercel.app/)
-[Check out the live example.](https://wingless-birds.vercel.app/)
 
 ## General Features
 
